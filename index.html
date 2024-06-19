@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enchentes RS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container-fluid text-white">
+    <h1 class="text-center my-4">Enchentes RS</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+      <ul class="navbar-nav w-100 justify-content-around">
+        <li class="nav-item flex-fill text-center">
+          <a class="nav-link" href="#" onclick="showDiv('nivelRios')">
+            <i class="fas fa-water"></i> Nivel dos Rios
+          </a>
+        </li>
+        <li class="nav-item flex-fill text-center">
+          <a class="nav-link" href="#" onclick="showDiv('contatosEmergencia')">
+            <i class="fas fa-phone"></i> Contatos de Emergencia
+          </a>
+        </li>
+        <li class="nav-item flex-fill text-center">
+          <a class="nav-link" href="#" onclick="showDiv('previsaoAlagamento')">
+            <i class="fas fa-map"></i> Previsao de Alagamento
+          </a>
+        </li>
+        <li class="nav-item flex-fill text-center">
+          <a class="nav-link" href="#" onclick="showDiv('previsaoTempo')">
+            <i class="fas fa-cloud-sun"></i> Previsão do Tempo
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="nivelRios" class="content-div">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="rio-info" id="guaiba">
+            <h2>Lago Guaíba</h2>
+            <h5><i class="fas fa-map-marker-alt"></i> Usina do Gasômetro</h5>
+            <hr>
+            <h2><i class="fas fa-ruler" id="atualguaiba"></i></h2>
+            <h2><i class="fas fa-ruler" id="chuvaguaiba"></i></h2>
+            <hr>
+            <h5><i class="fas fa-ruler" id="anteriorguaiba"></i></h5>
+            <h5><i class="fas fa-calendar-alt" id="dataguaiba"></i></h5>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="rio-info" id="sinos">
+            <h2>Rio dos Sinos</h2>
+            <h5><i class="fas fa-map-marker-alt"></i> Av. Caxias do Sul - São Leopoldo</h5>
+            <hr>
+            <h2><i class="fas fa-ruler" id="atualsinos"></i></h2>
+            <h2><i class="fas fa-ruler" id="chuvasinos"></i></h2>
+            <hr>
+            <h5><i class="fas fa-ruler" id="anteriorsinos"></i></h5>
+            <h5><i class="fas fa-calendar-alt" id="datasinos"></i></h5>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="rio-info" id="taquari">
+            <h2>Taquari</h2>
+            <h5><i class="fas fa-map-marker-alt"></i> Cidade de Muçum</h5>
+            <hr>
+            <h2><i class="fas fa-ruler" id="atualtaquari"></i></h2>
+            <h2><i class="fas fa-ruler" id="chuvataquari"></i></h2>
+            <hr>
+            <h5><i class="fas fa-ruler" id="anteriortaquari"></i></h5>
+            <h5><i class="fas fa-calendar-alt" id="datataquari"></i></h5>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="rio-info" id="cai">
+            <h2>Rio Caí</h2>
+            <h5><i class="fas fa-map-marker-alt"></i> Passo Montenegro - Montenegro</h5>
+            <hr>
+            <h2><i class="fas fa-ruler" id="atualcai"></i></h2>
+            <h2><i class="fas fa-ruler" id="chuvacai"></i></h2>
+            <hr>
+            <h5><i class="fas fa-ruler" id="anteriorcai"></i></h5>
+            <h5><i class="fas fa-calendar-alt" id="datacai"></i></h5>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="rio-info" id="jacui">
+            <h2>Rio Jacuí</h2>
+            <h5><i class="fas fa-map-marker-alt"></i> R. Mar. Arthur Costa e Silva - Dona Francisca</h5>
+            <hr>
+            <h2><i class="fas fa-ruler" id="atualjacui"></i></h2>
+            <h2><i class="fas fa-ruler" id="chuvajacui"></i></h2>
+            <hr>
+            <h5><i class="fas fa-ruler" id="anteriorjacui"></i></h5>
+            <h5><i class="fas fa-calendar-alt" id="datajacui"></i></h5>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="rio-info" id="lagoadospatos">
+            <h2>Lagoa dos Patos</h2>
+            <h5><i class="fas fa-map-marker-alt"></i> Praia do Laranjal - Pelotas</h5>
+            <hr>
+            <h2><i class="fas fa-ruler" id="atuallagoadospatos"></i></h2>
+            <h2><i class="fas fa-ruler" id="chuvalagoadospatos"></i></h2>
+            <hr>
+            <h5><i class="fas fa-ruler" id="anteriorlagoadospatos"></i></h5>
+            <h5><i class="fas fa-calendar-alt" id="datalagoadospatos"></i></h5>
+          </div>
+        </div>
+        <!-- Repetir a estrutura acima para os outros rios -->
+      </div>
+    </div>
+    <div id="contatosEmergencia" class="content-div d-none">
+      <h2>Contatos de Emergencia</h2>
+      <!-- Conteúdo dos contatos de emergência -->
+    </div>
+    <div id="previsaoAlagamento" class="content-div d-none">
+      <h2>Previsao de Alagamento</h2>
+      <!-- Conteúdo da previsão de alagamento -->
+    </div>
+    <div id="previsaoTempo" class="content-div d-none">
+      <h2>Previsão do Tempo</h2>
+      <!-- Conteúdo da previsão do tempo -->
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+body {
+  /* background-color: black; */
+  background-image: url("Lhttps://img.freepik.com/vetores-gratis/fundo-de-tecnologia-azul-abstrato_23-2149352058.jpg");
+  background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+  background-position: center; /* Centraliza a imagem no fundo */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+.text-white {
+  color: white !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ddd;
+}
+
+.content-div {
+  display: none;
+  margin-top: 20px;
+}
+
+.content-div.active {
+  display: block;
+}
+
+.rio-info {
+  background-color: rgba(217, 217, 217, 1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+}
